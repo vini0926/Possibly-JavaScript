@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        label, button, p {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça seu pedido! Escolha de 1 a 4.</h1>
+    <h2>1 - Pizza de Calabresa</h2>
+    <h2>2 - Pizza de Quatro queijos</h2>
+    <h2>3 - Pizza de Frango com Catupiry</h2>
+    <h2>4 - Pizza de Brigadeiro</h2>
+    <label>Digite o número do pedido:</label>
+    <input type="number" id="numeroPedido" min="1" max="4" />
+    <button onclick="realizarPedido()">Confirmar Pedido</button>
+    <p id="resultado"></p>
+</body>
+</html>
